@@ -24,3 +24,6 @@ info NITPIC spooky social -- 6.30pm to 9.30pm
 
 ddate 15/11/2026
 info Misfits Yoga class and social for Trans+ Awareness Day -- 2pm to 4pm
+
+ddate 19/11/2026
+info NITPIC book club -- 6pm to 7.30pm

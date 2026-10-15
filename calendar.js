@@ -1,6 +1,18 @@
 const calendar = document.querySelector("#calendar");
 const hidePastEvents = true;
 
+const flagImages = {
+  trans: "./images/flags/transgender.png",
+  intersex: "./images/flags/intersex.png",
+  nonbinary: "./images/flags/nonbinary.png",
+  pride: "./images/flags/intersexprogresspride.png"
+};
+
+const flagSymbols = {
+  plus: "+",
+  infinity: "∞"
+};
+
 loadCalendar();
 
 async function loadCalendar() {
@@ -25,52 +37,78 @@ function parseCalendar(text) {
   const events = [];
   let currentEvent = null;
 
+  const textFields = new Set([
+    "audience",
+    "start",
+    "end",
+    "link",
+    "linktext"
+  ]);
+
   for (const [index, rawLine] of text.split(/\r?\n/).entries()) {
     const line = rawLine.trim();
-    if (!line) continue;
+
+    // Allow blank lines and full-line comments.
+    if (!line || line.startsWith("#")) continue;
 
     const [, instruction, value] = line.match(/^(\S+)\s*(.*)$/);
+    const lineNumber = index + 1;
 
-    switch (instruction) {
-      case "ddate":
-        {
-        // Reset first, so an invalid date cannot attach its info
-        // to the previous event
-        currentEvent = null;
+    if (instruction === "ddate" || instruction === "dddate") {
+      currentEvent = null;
 
-        const parts = value.split(/\s*-\s*/);
-        const start = parseDate(parts[0]);
-        const end = parts.length === 1 ? start : parseDate(parts[1]);
+      const parts = value.split(/\s*-\s*/);
+      const start = parseDate(parts[0]);
+      const end = parts.length === 1 ? start : parseDate(parts[1]);
 
-        if (
-          parts.length > 2 ||
-          !start ||
-          !end ||
-          end < start
-        ) {
-          console.warn(`Invalid date on line ${index + 1}: ${value}`);
-          break;
-        }
-
-        currentEvent = { start, end, details: [] };
-        events.push(currentEvent);
-        break;
+      if (parts.length > 2 || !start || !end || end < start) {
+        console.warn(`Invalid date on line ${lineNumber}: ${value}`);
+        continue;
       }
 
-      case "info":
-        if (currentEvent) {
-          currentEvent.details.push(value);
-        } else {
-          console.warn(`Info without a valid date on line ${index + 1}`);
-        }
-        break;
+      currentEvent = {
+        start,
+        end,
+        details: [],
+        audience: "",
+        flags: [],
+        startTime: "",
+        endTime: "",
+        link: "",
+        linktext: ""
+      };
 
-      default:
-        console.warn(`Unknown instruction on line ${index + 1}: ${instruction}`);
+      events.push(currentEvent);
+      continue;
+    }
+
+    if (!currentEvent) {
+      console.warn(`Field without a valid date on line ${lineNumber}`);
+      continue;
+    }
+
+    if (instruction === "info") {
+      currentEvent.details.push(value);
+    } else if (instruction === "flagline") {
+      currentEvent.flags = value ? value.split(/\s+/) : [];
+    } else if (textFields.has(instruction)) {
+      // Keep date objects separate from display-only time strings.
+      const property = {
+        start: "startTime",
+        end: "endTime"
+      }[instruction] || instruction;
+
+      currentEvent[property] = value;
+    } else {
+      console.warn(
+        `Unknown instruction on line ${lineNumber}: ${instruction}`
+      );
     }
   }
 
-  return events.sort((a, b) => a.start - b.start || a.end - b.end);
+  return events.sort((a, b) =>
+    a.start - b.start || a.end - b.end
+  );
 }
 
 function parseDate(value = "") {
@@ -204,11 +242,7 @@ function renderCalendar(container, events, { hidePastEvents = false } = {}) {
       currentDate = dateKey;
     }
 
-    for (const detail of event.details) {
-      eventList.append(
-        element("li", "calendar-event", detail.replace(/\|/g, "\n"))
-      );
-    }
+    eventList.append(renderEvent(event));
   }
 
   if (!visibleEvents.length) {
@@ -218,4 +252,110 @@ function renderCalendar(container, events, { hidePastEvents = false } = {}) {
   }
 
   container.replaceChildren(fragment);
+}
+
+function renderEvent(event) {
+  const item = element("li", "calendar-event");
+
+    const [title, ...description] = event.details
+    .flatMap(detail => detail.split("|"));
+
+    item.append(
+    element("h5", "calendar-event-title", title)
+    );
+
+    if (description.length) {
+    item.append(
+        element(
+        "p",
+        "calendar-event-description",
+        description.join("\n")
+        )
+    );
+    }
+
+  const time = event.startTime && event.endTime
+    ? `${event.startTime}–${event.endTime}`
+    : event.startTime
+      ? `From ${event.startTime}`
+      : event.endTime
+        ? `Until ${event.endTime}`
+        : "";
+
+  if (time) {
+    item.append(element("p", "calendar-event-time", time));
+  }
+
+  if (event.audience) {
+    item.append(renderAudience(event));
+  }
+
+  if (event.link) {
+    const url = getEventUrl(event.link);
+
+    if (url) {
+      const paragraph = element("p", "calendar-event-link");
+      const anchor = element(
+        "a",
+        "",
+        event.linktext || "Event details"
+      );
+
+      anchor.href = url.href;
+      paragraph.append(anchor);
+      item.append(paragraph);
+    } else {
+      console.warn(`Invalid event link: ${event.link}`);
+    }
+  }
+
+  return item;
+}
+
+function renderAudience(event) {
+  const line = element("p", "calendar-audience");
+
+  const icons = element("span", "calendar-flags");
+  icons.setAttribute("aria-hidden", "true");
+
+  for (const name of event.flags) {
+    if (Object.hasOwn(flagImages, name)) {
+      const image = element("img", "calendar-flag");
+      image.src = flagImages[name];
+      image.alt = "";
+      icons.append(image);
+    } else if (Object.hasOwn(flagSymbols, name)) {
+      icons.append(
+        element("span", "calendar-flag-symbol", flagSymbols[name])
+      );
+    } else {
+      console.warn(`Unknown flagline icon: ${name}`);
+    }
+  }
+
+    if (icons.childElementCount) {
+    line.append(icons);
+    }
+
+    line.append(
+    element(
+        "span",
+        "calendar-audience-label",
+        `(${event.audience})`
+    )
+    );
+
+    return line;
+}
+
+function getEventUrl(value) {
+  try {
+    const url = new URL(value, document.baseURI);
+
+    return ["http:", "https:"].includes(url.protocol)
+      ? url
+      : null;
+  } catch {
+    return null;
+  }
 }

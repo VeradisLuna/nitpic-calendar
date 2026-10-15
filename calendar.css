@@ -16,6 +16,7 @@
   min-width: 0;
   padding: 1rem;
   border: 1px solid currentColor;
+  border-color: #c4b2ce;
   border-radius: 0.5rem;
 }
 
@@ -46,9 +47,109 @@
   margin-top: 0.5rem;
 }
 
+.calendar-event {
+  white-space: normal;
+}
+
+.calendar-event + .calendar-event {
+  margin-top: 1.25rem;
+}
+
+.calendar-event p {
+  margin: 0;
+}
+
+.calendar-event p + p {
+  margin-top: 0.35rem;
+}
+
+.calendar-event-description {
+  white-space: pre-line;
+}
+
+.calendar-event-time {
+  font-size: 0.95em;
+}
+
+.calendar-audience {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.9em;
+}
+
+.calendar-flags {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 0.2rem;
+  white-space: nowrap;
+}
+
+.calendar-flag {
+  display: block;
+  width: auto;
+  height: 1.15rem;
+}
+
+.calendar-flag-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+
+  width: 1.15rem;
+  height: 1.15rem;
+
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.calendar-events {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.calendar-event + .calendar-event {
+  margin-top: 1.25rem;
+}
+
+.calendar-date-title {
+  margin-bottom: 0.65rem;
+}
+
+.calendar-event-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.calendar-event-title + .calendar-event-description {
+  margin-top: 0.2rem;
+}
+
+.calendar-event {
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.5rem;
+  background-color: #f3ecfa;
+}
+
+.calendar-event + .calendar-event {
+  margin-top: 0.65rem;
+}
+
 @media (prefers-color-scheme: dark) {
   .calendar-month {
     background-color: #220022;
     border-color: #65566f;
+  }
+
+  .calendar-event {
+    background-color: rgb(255 255 255 / 5%);
   }
 }

@@ -1,29 +1,76 @@
 ddate 12/10/2026
-info NITPIC games night -- 6pm to 10pm
+info NITPIC games night
+audience TIN
+flagline trans intersex nonbinary
+start 6pm
+end 10pm
+
+ddate 18/10/2026
+info Cardiff Queer Book Club|Bury Your Gays by Chuck Tingle (he/him)
+audience queer community
+flagline pride plus
+start 11.30am
+end 1pm
 
 ddate 21/10/2026
-info NITPIC craft club -- 6pm to 8pm
+info NITPIC craft club
+audience TIN
+flagline trans intersex nonbinary
+start 6pm
+end 8pm
 
 ddate 21/10/2026
-info Misfits Yoga -- 7.15pm to 8.15pm
+info Misfits Yoga
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.30pm
 
 ddate 23/10/2026
-info NITPIC book club -- 6pm to 7.30pm
+info NITPIC book club|This Divine Revelry by Bea Fitzgerald (she/her)
+audience TIN
+flagline trans intersex nonbinary
+start 6pm
+end 8.30pm
 
 ddate 23/10/2026
-info Trans Aid Cymru Swim & Gym -- 7.15pm to 8.30pm
+info Trans Aid Cymru Swim & Gym
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.30pm
 
 ddate 24/10/2026
-info Trans Aid Cymru social -- 3pm to 4.30pm
+info Trans Aid Cymru social
+audience TIN
+flagline trans intersex nonbinary
+start 3pm
+end 4.30pm
 
 ddate 28/10/2026
-info Misfits Yoga -- 7.15pm to 8.15pm
+info Misfits Yoga
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.15pm
 
 ddate 30/10/2026
-info NITPIC spooky social -- 6.30pm to 9.30pm
+info NITPIC spooky social
+audience TIN
+flagline trans intersex nonbinary
+start 6.30pm
+end 9.30pm
 
 ddate 15/11/2026
-info Misfits Yoga class and social for Trans+ Awareness Day -- 2pm to 4pm
+info Misfits Yoga class and social for Trans+ Awareness Day
+audience trans+
+flagline trans plus
+start 2pm
+end 4pm
 
 ddate 19/11/2026
-info NITPIC book club -- 6pm to 7.30pm
+info NITPIC book club
+audience TIN
+flagline trans intersex nonbinary
+start 6pm
+end 7.30pm

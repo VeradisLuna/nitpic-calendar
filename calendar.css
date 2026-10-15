@@ -1,0 +1,47 @@
+#calendar {
+  margin-block: 2rem;
+}
+
+.calendar-year + .calendar-year {
+  margin-top: 2rem;
+}
+
+.calendar-months {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+}
+
+.calendar-month {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+}
+
+.calendar-month-title {
+  margin: 0 0 1rem;
+}
+
+.calendar-date + .calendar-date {
+  margin-top: 1.25rem;
+}
+
+.calendar-date-title {
+  margin: 0 0 0.4rem;
+  font-size: 1em;
+}
+
+.calendar-events {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.calendar-event {
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.calendar-event + .calendar-event {
+  margin-top: 0.5rem;
+}

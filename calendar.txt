@@ -4,6 +4,9 @@ info NITPIC games night -- 6pm to 10pm
 ddate 21/10/2026
 info NITPIC craft club -- 6pm to 8pm
 
+ddate 21/10/2026
+info Misfits Yoga -- 7.15pm to 8.15pm
+
 ddate 23/10/2026
 info NITPIC book club -- 6pm to 7.30pm
 
@@ -13,8 +16,11 @@ info Trans Aid Cymru Swim & Gym -- 7.15pm to 8.30pm
 ddate 24/10/2026
 info Trans Aid Cymru social -- 3pm to 4.30pm
 
+ddate 28/10/2026
+info Misfits Yoga -- 7.15pm to 8.15pm
+
 ddate 30/10/2026
 info NITPIC spooky social -- 6.30pm to 9.30pm
 
 ddate 15/11/2026
-info Not A Phase / Misfits Trans+ Awareness Day yoga class and social -- 2pm to 4pm
+info Misfits Yoga class and social for Trans+ Awareness Day -- 2pm to 4pm

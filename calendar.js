@@ -1,5 +1,5 @@
 const calendar = document.querySelector("#calendar");
-const hidePastEvents = false;
+const hidePastEvents = true;
 
 loadCalendar();
 

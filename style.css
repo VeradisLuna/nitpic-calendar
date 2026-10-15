@@ -45,3 +45,43 @@ h1 {
     display: block;
   }
 }
+
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  h1 {
+    color: white;
+  }
+
+  body {
+    background-color: #18151d;
+    color: #f2edf5;
+  }
+
+  .intro {
+    color: #efb6dc;
+  }
+
+  .wrap {
+    background: #110011;
+    }
+
+  a {
+    color: #d5b0ff;
+  }
+
+  a:visited {
+    color: #efb6dc;
+  }
+
+  a:hover {
+    color: #ffffff;
+  }
+
+  .muted {
+    color: #bdb2c5;
+  }
+}

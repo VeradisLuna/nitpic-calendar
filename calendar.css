@@ -45,3 +45,10 @@
 .calendar-event + .calendar-event {
   margin-top: 0.5rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  .calendar-month {
+    background-color: #220022;
+    border-color: #65566f;
+  }
+}

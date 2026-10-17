@@ -47,6 +47,13 @@ flagline trans intersex nonbinary
 start 3pm
 end 4.30pm
 
+ddate 27/10/2026
+info CWÎR: Fabric as Archive|with Ophelia Dos Santos (she/her)
+audience LGBTQIA+ creatives
+flagline pride plus
+start 6pm
+end 8pm
+
 ddate 28/10/2026
 info Misfits Yoga
 audience trans+
@@ -59,14 +66,44 @@ info NITPIC spooky social
 audience TIN
 flagline trans intersex nonbinary
 start 6.30pm
-end 9.30pm
+
+ddate 31/10/2026
+info Garddio Queer Death Café
+audience queer
+flagline pride
+start 2pm
+end 4pm
+
+ddate 4/11/2026
+info Misfits Yoga
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.15pm
+
+ddate 13/11/2026
+info Trans Awareness Week starts
 
 ddate 15/11/2026
-info Misfits Yoga class and social for Trans+ Awareness Day
+info Misfits Yoga class and social|for Trans Awareness Week
 audience trans+
 flagline trans plus
 start 2pm
 end 4pm
+
+ddate 16/11/2026
+info NITPIC games night
+audience TIN
+flagline trans intersex nonbinary
+start 6pm
+end 10pm
+
+ddate 18/11/2026
+info Misfits Yoga
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.15pm
 
 ddate 19/11/2026
 info NITPIC book club
@@ -74,3 +111,22 @@ audience TIN
 flagline trans intersex nonbinary
 start 6pm
 end 7.30pm
+
+ddate 19/11/2026
+info Cardiff Trans+ Leather social
+audience trans+
+flagline trans plus
+start 8pm
+
+ddate 19/11/2026
+info Trans Awareness Week ends
+
+ddate 20/11/2026
+info Transgender Day of Remembrance
+
+ddate 25/11/2026
+info Misfits Yoga
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.15pm

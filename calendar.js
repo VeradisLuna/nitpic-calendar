@@ -286,8 +286,10 @@ function renderEvent(event) {
     item.append(element("p", "calendar-event-time", time));
   }
 
+  const footer = element("div", "calendar-event-footer");
+
   if (event.audience) {
-    item.append(renderAudience(event));
+    footer.append(renderAudience(event));
   }
 
   if (event.link) {
@@ -303,10 +305,14 @@ function renderEvent(event) {
 
       anchor.href = url.href;
       paragraph.append(anchor);
-      item.append(paragraph);
+      footer.append(paragraph);
     } else {
       console.warn(`Invalid event link: ${event.link}`);
     }
+  }
+
+  if (footer.childElementCount) {
+    item.append(footer);
   }
 
   return item;

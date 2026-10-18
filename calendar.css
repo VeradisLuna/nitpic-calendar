@@ -143,6 +143,49 @@
   margin-top: 0.65rem;
 }
 
+.calendar-event-link {
+  font-size: 0.875em;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.calendar-event-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1rem;
+  margin-top: 0.35rem;
+}
+
+/* Override the existing paragraph spacing inside this footer. */
+.calendar-event .calendar-event-footer > p {
+  margin: 0;
+}
+
+.calendar-event-footer > .calendar-audience {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.calendar-event-footer > .calendar-event-link {
+  flex: 0 0 auto;
+  margin-left: auto;
+  max-width: 100%;
+  font-size: 0.875em;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.calendar-audience-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.calendar-event .calendar-event-footer > .calendar-event-link {
+  margin-left: auto;
+}
+
 @media (prefers-color-scheme: dark) {
   .calendar-month {
     background-color: #220022;

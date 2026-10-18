@@ -4,6 +4,8 @@ audience TIN
 flagline trans intersex nonbinary
 start 6pm
 end 10pm
+link https://www.instagram.com/nitpic.cardiff/
+linktext Instagram
 
 ddate 18/10/2026
 info Cardiff Queer Book Club|Bury Your Gays by Chuck Tingle (he/him)
@@ -11,6 +13,8 @@ audience queer community
 flagline pride plus
 start 11.30am
 end 1pm
+link https://www.instagram.com/cardiffqueerbookclub/
+linktext Instagram
 
 ddate 21/10/2026
 info NITPIC craft club
@@ -18,6 +22,8 @@ audience TIN
 flagline trans intersex nonbinary
 start 6pm
 end 8pm
+link https://www.instagram.com/nitpic.cardiff/
+linktext Instagram
 
 ddate 21/10/2026
 info Misfits Yoga
@@ -25,6 +31,8 @@ audience trans+
 flagline trans plus
 start 7.15pm
 end 8.30pm
+link https://notaphase.org/projects/misfits/
+linktext Not A Phase
 
 ddate 23/10/2026
 info NITPIC book club|This Divine Revelry by Bea Fitzgerald (she/her)
@@ -32,6 +40,8 @@ audience TIN
 flagline trans intersex nonbinary
 start 6pm
 end 8.30pm
+link https://www.instagram.com/nitpic.cardiff/
+linktext Instagram
 
 ddate 23/10/2026
 info Trans Aid Cymru Swim & Gym
@@ -39,6 +49,8 @@ audience trans+
 flagline trans plus
 start 7.15pm
 end 8.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram
 
 ddate 24/10/2026
 info Trans Aid Cymru social
@@ -46,6 +58,8 @@ audience TIN
 flagline trans intersex nonbinary
 start 3pm
 end 4.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram
 
 ddate 27/10/2026
 info CWÎR: Fabric as Archive|with Ophelia Dos Santos (she/her)
@@ -53,6 +67,8 @@ audience LGBTQIA+ creatives
 flagline pride plus
 start 6pm
 end 8pm
+link https://www.eventbrite.co.uk/e/cwir-creative-community-october-tickets-2002633413449
+linktext Eventbrite
 
 ddate 28/10/2026
 info Misfits Yoga
@@ -60,12 +76,16 @@ audience trans+
 flagline trans plus
 start 7.15pm
 end 8.15pm
+link https://notaphase.org/projects/misfits/
+linktext Not A Phase
 
 ddate 30/10/2026
 info NITPIC spooky social
 audience TIN
 flagline trans intersex nonbinary
 start 6.30pm
+link https://www.instagram.com/nitpic.cardiff/
+linktext Instagram
 
 ddate 31/10/2026
 info Garddio Queer Death Café
@@ -73,6 +93,8 @@ audience queer
 flagline pride
 start 2pm
 end 4pm
+link https://www.eventbrite.com/e/queer-death-cafe-tickets-2003421334141
+linktext Eventbrite
 
 ddate 4/11/2026
 info Misfits Yoga
@@ -80,9 +102,29 @@ audience trans+
 flagline trans plus
 start 7.15pm
 end 8.15pm
+link https://notaphase.org/projects/misfits/
+linktext Not A Phase
 
 ddate 13/11/2026
 info Trans Awareness Week starts
+
+ddate 13/11/2026
+info Trans Aid Cymru Swim & Gym
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram
+
+ddate 14/11/2026
+info Trans Aid Cymru social
+audience TIN
+flagline trans intersex nonbinary
+start 3pm
+end 4.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram
 
 ddate 15/11/2026
 info Misfits Yoga class and social|for Trans Awareness Week
@@ -92,11 +134,13 @@ start 2pm
 end 4pm
 
 ddate 16/11/2026
-info NITPIC games night
+info NITPIC games night|MTG meetup, and games with Luna (they/she)
 audience TIN
 flagline trans intersex nonbinary
 start 6pm
 end 10pm
+link https://www.instagram.com/nitpic.cardiff/
+linktext Instagram
 
 ddate 18/11/2026
 info Misfits Yoga
@@ -104,6 +148,8 @@ audience trans+
 flagline trans plus
 start 7.15pm
 end 8.15pm
+link https://notaphase.org/projects/misfits/
+linktext Not A Phase
 
 ddate 19/11/2026
 info NITPIC book club
@@ -111,6 +157,8 @@ audience TIN
 flagline trans intersex nonbinary
 start 6pm
 end 7.30pm
+link https://www.instagram.com/nitpic.cardiff/
+linktext Instagram
 
 ddate 19/11/2026
 info Cardiff Trans+ Leather social
@@ -130,3 +178,23 @@ audience trans+
 flagline trans plus
 start 7.15pm
 end 8.15pm
+link https://notaphase.org/projects/misfits/
+linktext Not A Phase
+
+ddate 27/11/2026
+info Trans Aid Cymru Swim & Gym
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram
+
+ddate 28/11/2026
+info Trans Aid Cymru social
+audience TIN
+flagline trans intersex nonbinary
+start 3pm
+end 4.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram

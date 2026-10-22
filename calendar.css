@@ -186,6 +186,103 @@
   margin-left: auto;
 }
 
+.calendar-filters {
+  margin-block: 1.5rem;
+}
+
+.calendar-filter-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+}
+
+.calendar-text-button {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0.25rem 0;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  cursor: pointer;
+}
+
+.calendar-text-button:hover {
+  text-decoration-thickness: 2px;
+}
+
+.calendar-text-button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 0.15rem;
+}
+
+.calendar-filter-summary,
+.calendar-filter-message {
+  font-size: 0.875em;
+}
+
+.calendar-filter-panel {
+  margin-top: 0.65rem;
+  padding: 1rem;
+  border: 1px solid #c4b2ce;
+  border-radius: 0.5rem;
+  background-color: #f3ecfa;
+}
+
+.calendar-filter-panel[hidden] {
+  display: none;
+}
+
+.calendar-filter-fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.calendar-filter-fieldset legend {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  font-weight: 700;
+}
+
+.calendar-filter-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+  gap: 0.25rem 1rem;
+}
+
+.calendar-filter-option,
+.calendar-filter-remember {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding-block: 0.25rem;
+  cursor: pointer;
+}
+
+.calendar-filter-option input,
+.calendar-filter-remember input {
+  flex: none;
+  margin: 0;
+  accent-color: #8353a6;
+}
+
+.calendar-filter-remember {
+  margin-block: 0.75rem 0.35rem;
+}
+
+.calendar-filter-message {
+  margin: 0.5rem 0 0;
+}
+
+.calendar-filter-message:empty {
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
   .calendar-month {
     background-color: #220022;
@@ -194,5 +291,15 @@
 
   .calendar-event {
     background-color: rgb(255 255 255 / 5%);
+  }
+
+  .calendar-filter-panel {
+    background-color: rgb(255 255 255 / 5%);
+    border-color: #65566f;
+  }
+
+  .calendar-filter-option input,
+  .calendar-filter-remember input {
+    accent-color: #d5b0ff;
   }
 }

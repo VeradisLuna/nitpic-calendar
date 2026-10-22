@@ -13,6 +13,31 @@ const flagSymbols = {
   infinity: "∞"
 };
 
+const eventGroups = {
+  nitpic: "NITPIC",
+  misfits: "Misfits",
+  tac: "Trans Aid Cymru",
+  loneworlds: "Lone Worlds",
+  garddio: "Garddio",
+  other: "Other"
+};
+
+const filterStorageKey = "nitpic-calendar-filters-v1";
+
+const filterToggle = document.querySelector("#filter-toggle");
+const filterPanel = document.querySelector("#filter-panel");
+const filterOptions = document.querySelector("#filter-options");
+const filterRemember = document.querySelector("#filter-remember");
+// const filterReset = document.querySelector("#filter-reset");
+const filterSummary = document.querySelector("#filter-summary");
+const filterStorageMessage = document.querySelector(
+  "#filter-storage-message"
+);
+
+const hiddenGroups = new Set();
+let allEvents = null;
+
+initialiseFilters();
 loadCalendar();
 
 async function loadCalendar() {
@@ -25,11 +50,168 @@ async function loadCalendar() {
       throw new Error(`Calendar request failed: ${response.status}`);
     }
 
-    const events = parseCalendar(await response.text());
-    renderCalendar(calendar, events, { hidePastEvents });
+    allEvents = parseCalendar(await response.text());
+    renderFilteredCalendar();
   } catch (error) {
     console.error(error);
     calendar.textContent = "Sorry, the calendar couldn't be loaded.";
+  }
+}
+
+function initialiseFilters() {
+  restoreFilterPreferences();
+
+  for (const [key, name] of Object.entries(eventGroups)) {
+    const label = element("label", "calendar-filter-option");
+    const checkbox = document.createElement("input");
+
+    checkbox.type = "checkbox";
+    checkbox.value = key;
+    checkbox.checked = !hiddenGroups.has(key);
+
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        hiddenGroups.delete(key);
+      } else {
+        hiddenGroups.add(key);
+      }
+
+      updateFilterSummary();
+      saveFilterPreferences();
+      renderFilteredCalendar();
+    });
+
+    label.append(
+      checkbox,
+      element("span", "", name)
+    );
+
+    filterOptions.append(label);
+  }
+
+  filterToggle.addEventListener("click", () => {
+    const expanded = filterToggle.getAttribute("aria-expanded") === "true";
+
+    filterToggle.setAttribute("aria-expanded", String(!expanded));
+    filterPanel.hidden = expanded;
+    filterToggle.textContent = expanded
+      ? "Filters (+)"
+      : "Filters (-)";
+  });
+
+  filterRemember.addEventListener("change", () => {
+    saveFilterPreferences();
+  });
+
+  // filterReset.addEventListener("click", () => {
+  //   hiddenGroups.clear();
+
+  //   for (const checkbox of filterOptions.querySelectorAll("input")) {
+  //     checkbox.checked = true;
+  //   }
+
+  //   updateFilterSummary();
+  //   saveFilterPreferences();
+  //   renderFilteredCalendar();
+  // });
+
+  updateFilterSummary();
+}
+
+function restoreFilterPreferences() {
+  try {
+    const raw = localStorage.getItem(filterStorageKey);
+    if (!raw) return;
+
+    const saved = JSON.parse(raw);
+
+    if (
+      saved?.version !== 1 ||
+      !Array.isArray(saved.hiddenGroups) ||
+      !saved.hiddenGroups.every(key => typeof key === "string")
+    ) {
+      return;
+    }
+
+    for (const key of saved.hiddenGroups) {
+      if (Object.hasOwn(eventGroups, key)) {
+        hiddenGroups.add(key);
+      }
+    }
+
+    filterRemember.checked = true;
+  } catch (error) {
+    console.warn("Could not restore calendar preferences:", error);
+
+    filterStorageMessage.textContent =
+      "Saved preferences couldn't be loaded. You can still use the filters.";
+  }
+}
+
+function saveFilterPreferences() {
+  try {
+    if (filterRemember.checked) {
+      localStorage.setItem(
+        filterStorageKey,
+        JSON.stringify({
+          version: 1,
+          hiddenGroups: [...hiddenGroups]
+        })
+      );
+    } else {
+      localStorage.removeItem(filterStorageKey);
+    }
+
+    filterStorageMessage.textContent = "";
+  } catch (error) {
+    console.warn("Could not save calendar preferences:", error);
+
+    filterStorageMessage.textContent =
+      "Your choices work for this visit, but this browser couldn't update saved preferences.";
+  }
+}
+
+function updateFilterSummary() {
+  const total = Object.keys(eventGroups).length;
+  const selected = total - hiddenGroups.size;
+
+  filterSummary.textContent = hiddenGroups.size
+    ? `${selected} of ${total} groups selected`
+    : "";
+}
+
+function getEventGroup(event) {
+  const key = (event.group || "").trim().toLowerCase();
+
+  return Object.hasOwn(eventGroups, key) ? key : "other";
+}
+
+function renderFilteredCalendar() {
+  if (allEvents === null) return;
+
+  const filteredEvents = allEvents.filter(event =>
+    !hiddenGroups.has(getEventGroup(event))
+  );
+
+  renderCalendar(calendar, filteredEvents, { hidePastEvents });
+
+  const emptyMessage = calendar.querySelector(".calendar-empty");
+
+  if (emptyMessage && hiddenGroups.size) {
+    emptyMessage.textContent = "No events match your filters.";
+
+    const paragraph = element("p", "calendar-empty-reset");
+    // const button = element(
+    //   "button",
+    //   "calendar-text-button",
+    //   "Show all groups"
+    // );
+
+    // button.type = "button";
+    // button.addEventListener("click", () => filterReset.click());
+
+    paragraph.append(button);
+    calendar.append(paragraph);
   }
 }
 
@@ -38,6 +220,7 @@ function parseCalendar(text) {
   let currentEvent = null;
 
   const textFields = new Set([
+    "group",
     "audience",
     "start",
     "end",
@@ -69,6 +252,7 @@ function parseCalendar(text) {
       currentEvent = {
         start,
         end,
+        group: "other",
         details: [],
         audience: "",
         flags: [],

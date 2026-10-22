@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NITPIC calendar</title>
-  <link href="style.css?v=8" rel="stylesheet"/>
-  <link href="calendar.css?v=8" rel="stylesheet"/>
-  <script src="calendar.js?v=8" defer></script>
+  <link href="style.css?v=9" rel="stylesheet"/>
+  <link href="calendar.css?v=9" rel="stylesheet"/>
+  <script src="calendar.js?v=9" defer></script>
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-syTeGPD7xrOdoLsHDqHai.js"></script>
   <script>
@@ -18,6 +18,33 @@
   <div class="wrap">
     <h1>NITPIC calendar 🗓️</h1>
     <p class="intro">A calendar full of cool community events<span class="desktop-br"> </span>for Non-binary, Intersex, and Trans People In Cardiff&nbsp;✨</p>
+    <section class="calendar-filters" aria-label="Calendar filters">
+      <div class="calendar-filter-heading">
+        <button type="button" id="filter-toggle" class="calendar-text-button" aria-expanded="false" aria-controls="filter-panel">
+          Filters (+)
+        </button>
+
+        <span id="filter-summary" class="calendar-filter-summary"></span>
+      </div>
+
+      <div id="filter-panel" class="calendar-filter-panel" hidden>
+        <fieldset class="calendar-filter-fieldset">
+          <legend>Show events from:</legend>
+          <div id="filter-options" class="calendar-filter-options"></div>
+        </fieldset>
+
+        <label class="calendar-filter-remember">
+          <input type="checkbox" id="filter-remember">
+          <span>Remember my preferences on this browser</span>
+        </label>
+
+        <!-- <button type="button" id="filter-reset" class="calendar-text-button">
+          Show all
+        </button> -->
+
+        <p id="filter-storage-message" class="calendar-filter-message" role="status"></p>
+      </div>
+    </section>
     <div id="calendar" aria-live="polite"></div>
     <p><span style="font-weight: bold;">Are you missing from this calendar?</span><br>
     Please message NITPIC on Insta: <a href="https://www.instagram.com/nitpic.cardiff/">@nitpic.cardiff</a><br>

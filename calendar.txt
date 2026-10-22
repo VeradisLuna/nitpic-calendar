@@ -132,6 +132,8 @@ audience trans+
 flagline trans plus
 start 2pm
 end 4pm
+link https://notaphase.org/projects/misfits/
+linktext Not A Phase
 
 ddate 16/11/2026
 info NITPIC games night|MTG meetup, and games with Luna (they/she)

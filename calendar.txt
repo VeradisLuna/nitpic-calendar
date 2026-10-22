@@ -8,7 +8,7 @@ link https://www.instagram.com/nitpic.cardiff/
 linktext Instagram
 
 ddate 18/10/2026
-info Cardiff Queer Book Club|Bury Your Gays by Chuck Tingle (he/him)
+info Cardiff Queer Book Club|Bury Your Gays by Chuck Tingle
 audience queer community
 flagline pride plus
 start 11.30am
@@ -96,6 +96,15 @@ end 4pm
 link https://www.eventbrite.com/e/queer-death-cafe-tickets-2003421334141
 linktext Eventbrite
 
+ddate 2/11/2026
+info Clwb Cymraeg NITPIC
+audience TIN
+flagline trans intersex nonbinary
+start 6.30pm
+end 8.00pm
+link https://www.instagram.com/nitpic.cardiff/
+linktext Instagram
+
 ddate 4/11/2026
 info Misfits Yoga
 audience trans+
@@ -136,7 +145,7 @@ link https://notaphase.org/projects/misfits/
 linktext Not A Phase
 
 ddate 16/11/2026
-info NITPIC games night|MTG meetup, and games with Luna (they/she)
+info NITPIC games night|MTG beginner-friendly meetup|plus bus and train games
 audience TIN
 flagline trans intersex nonbinary
 start 6pm
@@ -173,6 +182,15 @@ info Trans Awareness Week ends
 
 ddate 20/11/2026
 info Transgender Day of Remembrance
+
+ddate 22/11/2026
+info Cardiff Queer Book Club|Sunburn by Chloe Michelle Howarth
+audience queer community
+flagline pride plus
+start 11.30am
+end 1pm
+link https://www.eventbrite.com/e/cardiff-queer-book-club-november-2026-tickets-2003773828461
+linktext Eventbrite
 
 ddate 25/11/2026
 info Misfits Yoga

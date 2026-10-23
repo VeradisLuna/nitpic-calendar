@@ -1,4 +1,5 @@
 ddate 12/10/2026
+id 2026-10-12-games
 group nitpic
 info NITPIC games night
 audience TIN
@@ -9,6 +10,7 @@ link https://www.instagram.com/nitpic.cardiff/
 linktext Instagram
 
 ddate 18/10/2026
+id 2026-10-18-cqbc
 group other
 info Cardiff Queer Book Club|Bury Your Gays by Chuck Tingle
 audience queer community
@@ -19,6 +21,7 @@ link https://www.instagram.com/cardiffqueerbookclub/
 linktext Instagram
 
 ddate 21/10/2026
+id 2026-10-21-craft
 group nitpic
 info NITPIC craft club
 audience TIN
@@ -29,6 +32,7 @@ link https://www.instagram.com/nitpic.cardiff/
 linktext Instagram
 
 ddate 21/10/2026
+id 2026-10-21-yoga
 group misfits
 info Misfits Yoga
 audience trans+
@@ -39,6 +43,7 @@ link https://notaphase.org/projects/misfits/
 linktext Not A Phase
 
 ddate 23/10/2026
+id 2026-10-23-books
 group nitpic
 info NITPIC book club|This Divine Revelry by Bea Fitzgerald (she/her)
 audience TIN
@@ -49,6 +54,7 @@ link https://www.instagram.com/nitpic.cardiff/
 linktext Instagram
 
 ddate 23/10/2026
+id 2026-10-23-swim
 group tac
 info Trans Aid Cymru Swim & Gym
 audience trans+
@@ -59,6 +65,7 @@ link https://www.instagram.com/transaidcymru/
 linktext Instagram
 
 ddate 24/10/2026
+id 2026-10-24-tac
 group tac
 info Trans Aid Cymru social
 audience TIN
@@ -69,6 +76,7 @@ link https://www.instagram.com/transaidcymru/
 linktext Instagram
 
 ddate 27/10/2026
+id 2026-10-27-cwir
 group loneworlds
 info CWÎR: Fabric as Archive|with Ophelia Dos Santos (she/her)
 audience LGBTQIA+ creatives
@@ -79,6 +87,7 @@ link https://www.eventbrite.co.uk/e/cwir-creative-community-october-tickets-2002
 linktext Eventbrite
 
 ddate 28/10/2026
+id 2026-10-28-yoga
 group misfits
 info Misfits Yoga
 audience trans+
@@ -89,6 +98,7 @@ link https://notaphase.org/projects/misfits/
 linktext Not A Phase
 
 ddate 30/10/2026
+id 2026-10-30-spooky
 group nitpic
 info NITPIC spooky social
 audience TIN
@@ -98,6 +108,7 @@ link https://www.instagram.com/nitpic.cardiff/
 linktext Instagram
 
 ddate 31/10/2026
+id 2026-10-31-death
 group garddio
 info Garddio Queer Death Café
 audience queer
@@ -108,6 +119,7 @@ link https://www.eventbrite.com/e/queer-death-cafe-tickets-2003421334141
 linktext Eventbrite
 
 ddate 2/11/2026
+id 2026-11-02-cymraeg
 group nitpic
 info Clwb Cymraeg NITPIC
 audience TIN
@@ -118,6 +130,7 @@ link https://www.instagram.com/nitpic.cardiff/
 linktext Instagram
 
 ddate 4/11/2026
+id 2026-11-04-yoga
 group misfits
 info Misfits Yoga
 audience trans+
@@ -128,9 +141,11 @@ link https://notaphase.org/projects/misfits/
 linktext Not A Phase
 
 ddate 13/11/2026
+id 2026-11-13-taw
 info Trans Awareness Week starts
 
 ddate 13/11/2026
+id 2026-11-13-swim
 group tac
 info Trans Aid Cymru Swim & Gym
 audience trans+
@@ -141,6 +156,7 @@ link https://www.instagram.com/transaidcymru/
 linktext Instagram
 
 ddate 14/11/2026
+id 2026-11-14-tac
 group tac
 info Trans Aid Cymru social
 audience TIN
@@ -151,6 +167,7 @@ link https://www.instagram.com/transaidcymru/
 linktext Instagram
 
 ddate 15/11/2026
+id 2026-11-15-yoga
 group misfits
 info Misfits Yoga class and social|for Trans Awareness Week
 audience trans+
@@ -161,6 +178,7 @@ link https://notaphase.org/projects/misfits/
 linktext Not A Phase
 
 ddate 16/11/2026
+id 2026-11-16-games
 group nitpic
 info NITPIC games night|MTG beginner-friendly meetup|plus bus and train games
 audience TIN
@@ -171,6 +189,7 @@ link https://www.instagram.com/nitpic.cardiff/
 linktext Instagram
 
 ddate 18/11/2026
+id 2026-11-18-yoga
 group misfits
 info Misfits Yoga
 audience trans+
@@ -181,6 +200,7 @@ link https://notaphase.org/projects/misfits/
 linktext Not A Phase
 
 ddate 19/11/2026
+id 2026-11-19-books
 group nitpic
 info NITPIC book club
 audience TIN
@@ -191,6 +211,7 @@ link https://www.instagram.com/nitpic.cardiff/
 linktext Instagram
 
 ddate 19/11/2026
+id 2026-11-19-leather
 group other
 info Cardiff Trans+ Leather social
 audience trans+
@@ -198,12 +219,15 @@ flagline trans plus
 start 8pm
 
 ddate 19/11/2026
+id 2026-11-19-taw
 info Trans Awareness Week ends
 
 ddate 20/11/2026
+id 2026-11-20-tdor
 info Transgender Day of Remembrance
 
 ddate 22/11/2026
+id 2026-11-22-cqbc
 group other
 info Cardiff Queer Book Club|Sunburn by Chloe Michelle Howarth
 audience queer community
@@ -214,6 +238,7 @@ link https://www.eventbrite.com/e/cardiff-queer-book-club-november-2026-tickets-
 linktext Eventbrite
 
 ddate 25/11/2026
+id 2026-11-25-yoga
 group misfits
 info Misfits Yoga
 audience trans+
@@ -224,6 +249,7 @@ link https://notaphase.org/projects/misfits/
 linktext Not A Phase
 
 ddate 27/11/2026
+id 2026-11-27-swim
 group tac
 info Trans Aid Cymru Swim & Gym
 audience trans+
@@ -234,6 +260,7 @@ link https://www.instagram.com/transaidcymru/
 linktext Instagram
 
 ddate 28/11/2026
+id 2026-11-28-tac
 group tac
 info Trans Aid Cymru social
 audience TIN

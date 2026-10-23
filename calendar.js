@@ -220,6 +220,7 @@ function parseCalendar(text) {
   let currentEvent = null;
 
   const textFields = new Set([
+    "id",
     "group",
     "audience",
     "start",

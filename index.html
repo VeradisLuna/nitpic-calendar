@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NITPIC calendar</title>
-  <link href="style.css?v=9" rel="stylesheet"/>
-  <link href="calendar.css?v=9" rel="stylesheet"/>
-  <script src="calendar.js?v=9" defer></script>
+  <link href="style.css?v=11" rel="stylesheet"/>
+  <link href="calendar.css?v=11" rel="stylesheet"/>
+  <script src="calendar.js?v=11" defer></script>
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-syTeGPD7xrOdoLsHDqHai.js"></script>
   <script>
@@ -18,10 +18,52 @@
   <div class="wrap">
     <h1>NITPIC calendar 🗓️</h1>
     <p class="intro">A calendar full of cool community events<span class="desktop-br"> </span>for Non-binary, Intersex, and Trans People In Cardiff&nbsp;✨</p>
+
+    <section class="calendar-subscription" aria-label="Calendar subscription">
+      <button type="button" id="subscribe-toggle" class="calendar-text-button" aria-expanded="false" aria-controls="subscribe-panel">
+        Subscribe to calendar [+]
+      </button>
+
+      <div id="subscribe-panel" class="calendar-subscribe-panel" hidden>
+        <p>
+          <a href="webcal://calendar.nitpic.org/calendar.ics">
+            Open this calendar in your own app... (iCal)
+          </a>
+        </p>
+
+        <details class="calendar-google-instructions">
+          <summary>...or add it manually (Google Calendar)</summary>
+
+          <p>
+            Using a computer, navigate to
+            <a href="https://calendar.google.com/">calendar.google.com</a>:
+          </p>
+
+          <ol>
+            <li>Next to "Other calendars", click the +.</li>
+            <li>Choose "From URL".</li>
+            <li>Paste the subscription address below.</li>
+            <li>Click "Add calendar".</li>
+          </ol>
+
+          <label class="calendar-feed-label" for="calendar-feed-url">
+            Subscription address:
+          </label>
+
+          <input id="calendar-feed-url" class="calendar-feed-url" type="text" value="https://calendar.nitpic.org/calendar.ics" readonly spellcheck="false">
+        </details>
+
+        <p class="calendar-subscribe-note">
+          Includes all groups, regardless of filters<br>
+          Calendar apps check for updates periodically, so changes
+          may take a while to appear
+        </p>
+      </div>
+    </section>
     <section class="calendar-filters" aria-label="Calendar filters">
       <div class="calendar-filter-heading">
         <button type="button" id="filter-toggle" class="calendar-text-button" aria-expanded="false" aria-controls="filter-panel">
-          Filters (+)
+          Filters [+]
         </button>
 
         <span id="filter-summary" class="calendar-filter-summary"></span>
@@ -35,7 +77,7 @@
 
         <label class="calendar-filter-remember">
           <input type="checkbox" id="filter-remember">
-          <span>Remember my preferences on this browser</span>
+          <span>Remember filter preferences</span>
         </label>
 
         <!-- <button type="button" id="filter-reset" class="calendar-text-button">

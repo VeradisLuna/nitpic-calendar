@@ -95,8 +95,8 @@ function initialiseFilters() {
     filterToggle.setAttribute("aria-expanded", String(!expanded));
     filterPanel.hidden = expanded;
     filterToggle.textContent = expanded
-      ? "Filters (+)"
-      : "Filters (-)";
+      ? "Filters [+]"
+      : "Filters [-]";
   });
 
   filterRemember.addEventListener("change", () => {
@@ -550,3 +550,27 @@ function getEventUrl(value) {
     return null;
   }
 }
+
+const subscribeToggle = document.querySelector("#subscribe-toggle");
+const subscribePanel = document.querySelector("#subscribe-panel");
+const calendarFeedUrl = document.querySelector("#calendar-feed-url");
+
+subscribeToggle.addEventListener("click", () => {
+  const expanded =
+    subscribeToggle.getAttribute("aria-expanded") === "true";
+
+  subscribeToggle.setAttribute("aria-expanded", String(!expanded));
+  subscribePanel.hidden = expanded;
+
+  subscribeToggle.textContent = expanded
+    ? "Subscribe to calendar [+]"
+    : "Subscribe to calendar [-]";
+});
+
+calendarFeedUrl.addEventListener("click", () => {
+  calendarFeedUrl.select();
+});
+
+calendarFeedUrl.addEventListener("focus", () => {
+  calendarFeedUrl.select();
+});

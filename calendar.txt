@@ -145,6 +145,17 @@ id 2026-11-13-taw
 info Trans Awareness Week starts
 
 ddate 13/11/2026
+id 2026-11-13-craft
+group nitpic
+info NITPIC craft club
+audience TIN
+flagline trans intersex nonbinary
+start 6pm
+end 8pm
+link https://www.instagram.com/nitpic.cardiff/
+linktext Instagram
+
+ddate 13/11/2026
 id 2026-11-13-swim
 group tac
 info Trans Aid Cymru Swim & Gym
@@ -226,6 +237,28 @@ ddate 20/11/2026
 id 2026-11-20-tdor
 info Transgender Day of Remembrance
 
+ddate 20/11/2026
+id 2026-11-20-lwtdor
+group loneworlds
+info Lone Worlds: Evening Remembrance Event
+audience open to everyone
+flagline pride plus
+start 6.30pm
+end 8pm
+link https://www.instagram.com/loneworlds/
+linktext Instagram
+
+ddate 21/11/2026
+id 2026-11-21-garddio
+group garddio
+info Garddio: Queer Lichen Walk
+audience queer
+flagline pride
+start 1.30pm
+end 3.30pm
+link https://www.eventbrite.com/e/queer-lichen-walk-tickets-2004284751646
+linktext Eventbrite
+
 ddate 22/11/2026
 id 2026-11-22-cqbc
 group other
@@ -261,6 +294,28 @@ linktext Instagram
 
 ddate 28/11/2026
 id 2026-11-28-tac
+group tac
+info Trans Aid Cymru social
+audience TIN
+flagline trans intersex nonbinary
+start 3pm
+end 4.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram
+
+ddate 11/12/2026
+id 2026-12-11-swim
+group tac
+info Trans Aid Cymru Swim & Gym
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram
+
+ddate 12/12/2026
+id 2026-12-12-tac
 group tac
 info Trans Aid Cymru social
 audience TIN

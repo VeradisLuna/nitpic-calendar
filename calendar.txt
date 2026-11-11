@@ -213,7 +213,7 @@ linktext Not A Phase
 ddate 19/11/2026
 id 2026-11-19-books
 group nitpic
-info NITPIC book club
+info NITPIC book club|non-binary non-fiction
 audience TIN
 flagline trans intersex nonbinary
 start 6pm
@@ -268,6 +268,17 @@ flagline pride plus
 start 11.30am
 end 1pm
 link https://www.eventbrite.com/e/cardiff-queer-book-club-november-2026-tickets-2003773828461
+linktext Eventbrite
+
+ddate 24/11/2026
+id 2026-11-24-cwir
+group loneworlds
+info CWÎR: Creative Storytelling|with Joshua Jones (she/her)
+audience LGBTQIA+ creatives
+flagline pride plus
+start 6pm
+end 8pm
+link https://www.eventbrite.co.uk/e/cwir-creative-community-november-tickets-2004588071885
 linktext Eventbrite
 
 ddate 25/11/2026

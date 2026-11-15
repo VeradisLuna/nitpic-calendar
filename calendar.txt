@@ -200,6 +200,17 @@ link https://www.instagram.com/nitpic.cardiff/
 linktext Instagram
 
 ddate 18/11/2026
+id 2026-11-18-proxy
+group nitpic
+info NITPIC: Draw a card|Crafting and creating art for card games
+audience TIN
+flagline trans intersex nonbinary
+start 6pm
+end 8pm
+link https://www.instagram.com/nitpic.cardiff/
+linktext Instagram
+
+ddate 18/11/2026
 id 2026-11-18-yoga
 group misfits
 info Misfits Yoga

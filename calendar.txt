@@ -325,6 +325,17 @@ end 4.30pm
 link https://www.instagram.com/transaidcymru/
 linktext Instagram
 
+ddate 28/11/2026
+id 2026-11-28-garddio
+group garddio
+info Garddio: Queer Rest Café
+audience queer
+flagline pride
+start 3pm
+end 5pm
+link https://www.eventbrite.com/e/queer-rest-cafe-tickets-2004782339946
+linktext Eventbrite
+
 ddate 11/12/2026
 id 2026-12-11-swim
 group tac

@@ -191,7 +191,7 @@ linktext Not A Phase
 ddate 16/11/2026
 id 2026-11-16-games
 group nitpic
-info NITPIC games night|MTG beginner-friendly meetup|plus bus and train games
+info NITPIC games night|MTG beginner-friendly meetup|plus tabletop RPG one-shot
 audience TIN
 flagline trans intersex nonbinary
 start 6pm

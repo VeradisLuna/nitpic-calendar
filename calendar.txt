@@ -284,7 +284,7 @@ linktext Eventbrite
 ddate 24/11/2026
 id 2026-11-24-cwir
 group loneworlds
-info CWÎR: Creative Storytelling|with Joshua Jones (she/her)
+info CWÎR: Creative Storytelling|with Joshua Jones (he/him)
 audience LGBTQIA+ creatives
 flagline pride plus
 start 6pm

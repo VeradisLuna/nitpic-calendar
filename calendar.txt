@@ -357,3 +357,44 @@ start 3pm
 end 4.30pm
 link https://www.instagram.com/transaidcymru/
 linktext Instagram
+
+ddate 26/12/2026
+id 2026-12-26-tac
+info Trans Aid Cymru social
+audience TIN
+flagline trans intersex nonbinary
+start 3pm
+end 4.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram
+
+ddate 9/1/2027
+id 2027-09-01-tac
+info Trans Aid Cymru social
+audience TIN
+flagline trans intersex nonbinary
+start 3pm
+end 4.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram
+
+ddate 22/1/2027
+id 2027-01-22-swim
+group tac
+info Trans Aid Cymru Swim & Gym
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram
+
+ddate 23/1/2027
+id 2027-09-23-tac
+info Trans Aid Cymru social
+audience TIN
+flagline trans intersex nonbinary
+start 3pm
+end 4.30pm
+link https://www.instagram.com/transaidcymru/
+linktext Instagram

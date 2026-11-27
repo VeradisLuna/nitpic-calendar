@@ -336,6 +336,28 @@ end 5pm
 link https://www.eventbrite.com/e/queer-rest-cafe-tickets-2004782339946
 linktext Eventbrite
 
+ddate 2/12/2026
+id 2026-12-2-yoga
+group misfits
+info Misfits Yoga
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.15pm
+link https://notaphase.org/projects/misfits/
+linktext Not A Phase
+
+ddate 9/12/2026
+id 2026-12-9-yoga
+group misfits
+info Misfits Yoga
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.15pm
+link https://notaphase.org/projects/misfits/
+linktext Not A Phase
+
 ddate 11/12/2026
 id 2026-12-11-swim
 group tac
@@ -357,6 +379,17 @@ start 3pm
 end 4.30pm
 link https://www.instagram.com/transaidcymru/
 linktext Instagram
+
+ddate 16/12/2026
+id 2026-12-16-yoga
+group misfits
+info Misfits Yoga
+audience trans+
+flagline trans plus
+start 7.15pm
+end 8.15pm
+link https://notaphase.org/projects/misfits/
+linktext Not A Phase
 
 ddate 26/12/2026
 id 2026-12-26-tac

@@ -360,6 +360,7 @@ linktext Instagram
 
 ddate 26/12/2026
 id 2026-12-26-tac
+group tac
 info Trans Aid Cymru social
 audience TIN
 flagline trans intersex nonbinary
